@@ -82,5 +82,35 @@
       </ul>
       <a class="htmlacademy-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy.svg" width="27" height="35" alt="Логотип HTML Academy"></a>
     </footer>
+    <section class="modal modal-feedback">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label>
+            Ваше имя:
+            <input type="text" name="name" placeholder="Имя Фамилия">
+          </label>
+        </p>
+        <p>
+          <label>
+            Ваш e-mail:
+            <input type="email" name="email" placeholder="email@example.com">
+          </label>
+        </p>
+        <p>
+          <label>
+            Текст письма:
+            <textarea name="feedback" placeholder="В свободной форме"></textarea>
+          </label>
+        </p>
+        <button class="button button-send-feedback" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Карта проезда</h2>
+      <img src="img/map-big.png" width="960" height="559" alt="Офис компании по адресу ул. Строителей 15, Москва">
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
   </body>
 </html>
