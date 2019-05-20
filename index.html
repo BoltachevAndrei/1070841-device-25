@@ -8,7 +8,11 @@
     <header class="main-header">
       <img src="img/device.svg" width="163" height="35" alt="Логотип Device">
       <section class="site-search">
-        <!-- Здесь будет форма поиска -->
+        <form class="search" action="https://echo.htmlacademy.ru" method="get">
+          <label class="visually-hidden" for="search-text">Поиск по сайту</label>
+          <input type="text" name="search-text" placeholder="Поиск по сайту" id="search-text">
+          <button class="button" type="submit">Найти</button>
+        </form>
       </section>
       <nav>
         <ul class="user-navigation">
