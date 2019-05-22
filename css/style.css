@@ -1,0 +1,263 @@
+@font-face {
+    font-family: "gilroylight";
+    src: url("../gilroy-light-webfont.woff2") format('woff2'),
+         url("../gilroy-light-webfont.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "gilroyextrabold";
+    src: url("../gilroy-extrabold-webfont.woff2") format('woff2'),
+         url("../gilroy-extrabold-webfont.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Хэдер */
+
+.main-header {
+  background-color: #f7e397;
+}
+
+.search input {
+  background-color: #f7e397;
+  color: rgba(0, 0, 0, 0.3);
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.user-navigation,
+.product-navigation,
+.main-menu-list {
+  list-style: none;
+}
+
+.user-navigation a,
+.product-navigation a {
+  background-color: #f7e397;
+  color: #000000;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  text-transform: none;
+}
+
+.user-navigation a:hover,
+.product-navigation a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.user-navigation a:active,
+.product-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-menu-list,
+.product-categories-list {
+  list-style: none;
+}
+
+.main-menu-list a {
+  background-color: #f7e397;
+  color: #000000;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.main-menu-list a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.main-menu-list a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* Главная - Мейн */
+
+.about h2,
+.contacts h2 {
+  font-size: 47px;
+  line-height: 48px;
+  text-transform: none;
+}
+
+.about p,
+.contacts p {
+  background-color: #ffffff;
+  color: #464646;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  text-transform: none;
+}
+
+.transport-companies-list {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 16px;
+  line-height: 40px;
+  text-transform: none;
+}
+
+.about a,
+.contacts a {
+  background-color: #f0c52e;
+  color: #000000;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.about a:active,
+.contacts a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* Футер */
+
+.main-footer {
+  background-color: #464646;
+  color: #ffffff;
+}
+
+.main-footer a {
+  background-color: #464646;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  text-transform: none;
+}
+
+.main-footer a:hover {
+  color: #ffffff;
+}
+
+.main-footer a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.main-footer address {
+  background-color: #464646;
+  color: #ffffff;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  text-transform: none;
+}
+
+.site-navigation-footer {
+  list-style: none;
+}
+
+.site-navigation-footer a {
+  background-color: #464646;
+  color: #ffffff;
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.site-navigation-footer a:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.site-navigation-footer a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* Каталог - Мейн */
+
+main h1 {
+  font-size: 47px;
+  line-height: 48px;
+  text-transform: none;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs li,
+.breadcrumbs a {
+  background-color: #ffffff;
+  color: rgba(0, 0, 0, 0.3);
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  text-transform: none;
+}
+
+.breadcrumbs li:hover,
+.breadcrumbs a:hover {
+  background-color: #ffffff;
+  color: rgba(0, 0, 0, 0.6)
+}
+
+.breadcrumbs li:active,
+.breadcrumbs a:active {
+  background-color: #ffffff;
+  color: rgba(0, 0, 0, 0.1)
+}
+
+.filter legend {
+  text-transform: none;
+}
+
+.filter-option label {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  text-transform: none;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item h3 {
+  text-transform: none;
+}
+
+.catalog-item a {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.catalog-item-price {
+  background-color: #ffffff;
+  color: #464646;
+  font-family: "gilroylight", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: none;
+}
+
+.modal {
+  display: none;
+}
