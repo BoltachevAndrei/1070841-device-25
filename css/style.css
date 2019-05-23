@@ -254,7 +254,12 @@ main h1 {
 }
 
 .catalog-item h3 {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 18px;
   letter-spacing: 0.18px;
+  line-height: 24px;
   text-transform: none;
 }
 
