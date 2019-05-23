@@ -224,7 +224,6 @@ main h1 {
   text-transform: none;
 }
 
-.breadcrumbs li:hover,
 .breadcrumbs a:hover {
   background-color: #ffffff;
   color: rgba(0, 0, 0, 0.6)
