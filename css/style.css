@@ -46,6 +46,49 @@ a {
   line-height: 30px;
 }
 
+.search input:focus {
+  background-color: #f7e397;
+  color: #000000;
+}
+
+.search input::placeholder {
+  background-color: #f7e397;
+  color: rgba(0, 0, 0, 0.3);
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 0.15px;
+  line-height: 30px;
+}
+
+.search input:hover::placeholder{
+  background-color: #f7e397;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.search .button {
+  background-color: #f7e397;
+  border: 2px solid #000000;
+  color: #000000;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  height: 49px;
+  letter-spacing: 0.15px;
+  line-height: 30px;
+  width: 85px;
+}
+
+.search .button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.search .button:active {
+  background-color: #000000;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .user-navigation,
 .product-navigation,
 .main-menu-list {
@@ -136,6 +179,7 @@ a {
 
 .about a:active,
 .contacts a:active {
+  background-color: #f0c52e;
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -192,10 +236,12 @@ a {
 }
 
 .site-navigation-footer a:hover {
+  background-color: #464646;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .site-navigation-footer a:active {
+  background-color: #464646;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -229,7 +275,6 @@ main h1 {
   color: rgba(0, 0, 0, 0.6)
 }
 
-.breadcrumbs li:active,
 .breadcrumbs a:active {
   background-color: #ffffff;
   color: rgba(0, 0, 0, 0.1)
@@ -247,6 +292,29 @@ main h1 {
   letter-spacing: 0.14px;
   line-height: 24px;
   text-transform: none;
+}
+
+.filter-input[disabled]~label {
+  background-color: #ffffff;
+  color: #a6a6a6;
+}
+
+.filter-button {
+  background-color: #f0c52e;
+  border: none;
+  color: #000000;
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 18px;
+  font-size: 18px;
+  letter-spacing: 3.6px;
+  line-height: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.filter-button:active {
+  background-color: #f0c52e;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .catalog-list {
