@@ -37,7 +37,7 @@ a {
   cursor: pointer;
   font-family: "gilroyextrabold", Arial, sans-serif;
   font-size: 18px;
-  font-weight: normal;
+  font-weight: 400;
   letter-spacing: 3.6px;
   line-height: 24px;
   text-transform: uppercase;
@@ -71,10 +71,11 @@ a {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.search .button {
+.button-search {
   background-color: #f7e397;
   border: 2px solid #000000;
   color: #000000;
+  cursor: pointer;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
@@ -85,12 +86,12 @@ a {
   width: 85px;
 }
 
-.search .button:hover {
+.button-search:hover {
   background-color: #000000;
   color: #ffffff;
 }
 
-.search .button:active {
+.button-search:active {
   background-color: #000000;
   color: rgba(255, 255, 255, 0.3);
 }
@@ -124,7 +125,7 @@ a {
 .main-menu-list li {
   font-family: "gilroyextrabold", Arial, sans-serif;
   font-size: 18px;
-  font-weight: normal;
+  font-weight: 400;
   letter-spacing: 3.6px;
   line-height: 24px;
   text-transform: uppercase;
@@ -146,22 +147,17 @@ a {
   color: #000000;
   font-family: "gilroyextrabold", Arial, sans-serif;
   font-size: 47px;
-  font-weight: normal;
+  font-weight: 400;
   letter-spacing: 0.47px;
   line-height: 48px;
-}
-
-.about p,
-.contacts p {
-  color: #464646;
 }
 
 .transport-companies-list {
   color: #000000;
   font-family: "gilroyextrabold", Arial, sans-serif;
   font-size: 16px;
-  font-weight: normal;
-  letter-spacing: normal;
+  font-weight: 400;
+  letter-spacing: 0;
   line-height: 40px;
 }
 
@@ -186,7 +182,7 @@ a {
 
 .main-footer address {
   font-style: normal;
-  letter-spacing: normal;
+  letter-spacing: 0;
 }
 
 .site-navigation-footer {
@@ -197,7 +193,7 @@ a {
   color: #ffffff;
   font-family: "gilroyextrabold", Arial, sans-serif;
   font-size: 18px;
-  font-weight: normal;
+  font-weight: 400;
   letter-spacing: 3.6px;
   line-height: 24px;
   text-transform: uppercase;
@@ -211,17 +207,13 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.footer-social a {
-  background-color: #464646;
-}
-
 /* Каталог - Мейн */
 
 main h1 {
   color: #000000;
   font-family: "gilroyextrabold", Arial, sans-serif;
   font-size: 47px;
-  font-weight: normal;
+  font-weight: 400;
   letter-spacing: 0.47px;
   line-height: 48px;
 }
@@ -250,7 +242,7 @@ main h1 {
   color: #000000;
   font-family: "gilroyextrabold", Arial, sans-serif;
   font-size: 18px;
-  font-weight: normal;
+  font-weight: 400;
   letter-spacing: 0.18px;
   line-height: 24px;
 }
@@ -273,10 +265,9 @@ main h1 {
   color: #000000;
   font-family: "gilroyextrabold", Arial, sans-serif;
   font-size: 18px;
-  font-weight: normal;
+  font-weight: 400;
   letter-spacing: 0.18px;
   line-height: 24px;
-  text-transform: none;
 }
 
 .catalog-item a {
@@ -287,10 +278,9 @@ main h1 {
   color: #464646;
   font-family: "gilroylight", Arial, sans-serif;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 400;
   letter-spacing: 0.16px;
   line-height: 24px;
-  text-transform: none;
 }
 
 .modal {
