@@ -286,3 +286,117 @@ main h1 {
 .modal {
   display: none;
 }
+
+/* Сеточные стили */
+
+.main-header {
+  margin: 40px auto 0;
+  width: 1160px;
+}
+
+.main-header .wrapper-header {
+  display: flex;
+  margin: 0 auto;
+  width: 1040px;
+}
+
+.site-search {
+  width: 540px;
+}
+
+.wrapper-header .user-navigation {
+  display: flex;
+  width: 290px;
+}
+
+.wrapper-header .user-link {
+  margin-right: 20px;
+}
+
+.wrapper-header .product-navigation {
+  display: flex;
+  width: 210px;
+}
+
+.wrapper-header .compare-link {
+  margin-right: 40px;
+}
+
+.wrapper-header .cart-link {
+  margin-left: auto;
+}
+
+.main-menu-list {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  width: 1040px;
+}
+
+.main-menu-item:nth-child(1) {
+  margin-right: 320px;
+}
+
+.main-menu-item:nth-child(2) {
+  margin-right: 33px;
+}
+
+.main-menu-item:nth-child(4) {
+  margin-left: auto;
+  margin-right: -4px;
+}
+
+.index-columns {
+  display: flex;
+  margin: 0 auto;
+  width: 1160px;
+}
+
+.about {
+  width: 480px;
+}
+
+.contacts {
+  margin-left: auto;
+  width: 562px;
+}
+
+.wrapper-footer {
+  display: flex;
+  margin: 0 auto;
+  width: 1160px;
+}
+
+.wrapper-footer img {
+  margin-right: 635px;
+}
+
+.wrapper-footer .user-navigation {
+  display: flex;
+  width: 266px;
+}
+
+.wrapper-footer .user-link {
+  margin-right: 20px;
+}
+
+.wrapper-footer .product-navigation {
+  display: flex;
+  width: 210px;
+}
+
+.wrapper-footer .compare-link {
+  margin-right: 40px;
+}
+
+.wrapper-footer .cart-link {
+  margin-left: auto;
+}
+
+.container-footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1160px;
+}
+
