@@ -238,6 +238,10 @@ main h1 {
   color: rgba(0, 0, 0, 0.1)
 }
 
+.filters {
+  background-color: #ebebeb;
+}
+
 .filter legend {
   color: #000000;
   font-family: "gilroyextrabold", Arial, sans-serif;
@@ -289,15 +293,29 @@ main h1 {
 
 /* Сеточные стили */
 
-.main-header {
-  margin: 40px auto 0;
+.container {
   width: 1160px;
+  margin: 0 auto;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 40px;
 }
 
 .main-header .wrapper-header {
   display: flex;
-  margin: 0 auto;
+  margin: 28px auto 25px;
   width: 1040px;
+}
+
+.wrapper-header > img,
+.wrapper-header > a {
+  position: absolute;
+  top: -18px;
+  left: 60px;
 }
 
 .site-search {
@@ -348,8 +366,6 @@ main h1 {
 
 .index-columns {
   display: flex;
-  margin: 0 auto;
-  width: 1160px;
 }
 
 .about {
@@ -361,42 +377,145 @@ main h1 {
   width: 562px;
 }
 
+.index-columns h2 {
+  margin: 0;
+  margin-bottom: 43px;
+}
+
+.about p {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.transport-companies-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 38px;
+  margin-top: 65px;
+}
+
+.contacts p {
+  margin: 0;
+  margin-bottom: 39px;
+}
+
 .wrapper-footer {
   display: flex;
-  margin: 0 auto;
-  width: 1160px;
-}
-
-.wrapper-footer img {
-  margin-right: 635px;
-}
-
-.wrapper-footer .user-navigation {
-  display: flex;
-  width: 266px;
-}
-
-.wrapper-footer .user-link {
-  margin-right: 20px;
 }
 
 .wrapper-footer .product-navigation {
   display: flex;
-  width: 210px;
-}
-
-.wrapper-footer .compare-link {
-  margin-right: 40px;
+  margin-left: 60px;
+  padding: 0;
 }
 
 .wrapper-footer .cart-link {
-  margin-left: auto;
+  margin-left: 62px;
+}
+
+.wrapper-footer .user-navigation {
+  display: flex;
+  padding: 0;
+}
+
+.wrapper-footer .login-link {
+  margin-left: 20px;
+}
+
+.wrapper-footer img,
+.wrapper-footer a {
+  margin-right: auto;
 }
 
 .container-footer {
   display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  width: 1160px;
 }
 
+.site-navigation-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  width: 420px;
+  margin-left: 175px;
+  margin-right: auto;
+}
+
+.container-social {
+  display: flex;
+  list-style: none;
+}
+
+.footer-social {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 140px;
+  margin-left: 510px;
+  margin-right: auto;
+}
+
+.wrapper {
+  width: 1040px;
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.breadcrumbs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.catalog-columns {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper-filters {
+  padding: 0;
+  flex-grow: 1;
+  background-color: #ebebeb;
+}
+
+.wrapper-catalog {
+  padding: 0;
+  flex-grow: 1;
+}
+
+.filters {
+  margin: 0;
+  padding: 0;
+  width: 327px;
+  margin-left: auto;
+}
+
+.catalog {
+  margin: 0;
+  padding: 0;
+  width: 833px;
+}
+
+.filter ul,
+.catalog ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog-item:nth-child(2n) {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.catalog-item:nth-child(2n+1) {
+  margin-right: 40px;
+  margin-left: 73px;
+}
