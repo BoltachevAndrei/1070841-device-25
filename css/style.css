@@ -464,14 +464,21 @@ main h1 {
 }
 
 .breadcrumbs {
+  display: flex;
+  width: 1040px;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
+}
+
+.breadcrumbs li {
+  margin-right: 40px;
 }
 
 .catalog-columns {
   display: flex;
   justify-content: center;
+  min-width: 1160px;
 }
 
 .wrapper-filters {
