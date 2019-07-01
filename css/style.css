@@ -1713,11 +1713,13 @@ main h1 {
 }
 
 .product-image-overlay {
-  height: 380px;
-  width: 360px;
-  position: absolute;
-  z-index: -1;
   background-color: rgba(238, 238, 238, 0.7);
+  display: none;
+  height: 380px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 360px;
 }
 
 .button-to-cart {
@@ -1751,7 +1753,7 @@ main h1 {
 
 .product-image-overlay:hover,
 .catalog-item-image:hover ~ .product-image-overlay {
-  z-index: 100;
+  display: block;
 }
 
 /************************Sorting-panel*******************************/
