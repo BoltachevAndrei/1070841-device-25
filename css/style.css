@@ -818,12 +818,12 @@ main h1 {
 .wrapper-header a:active,
 .container-footer-top > svg:active,
 .main-footer-logo > svg:active,
-.htmlacademy-logo:active,
+.htmlacademy-logo svg:active,
 .footer-social a {
   opacity: 0.3;
 }
 
-.footer-social a:active {
+.footer-social svg:active {
   opacity: 0.1;
 }
 
