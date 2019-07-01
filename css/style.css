@@ -753,7 +753,10 @@ main h1 {
   width: 16px;
 }
 
-.main-menu-item:focus-within > .product-categories-list,
+.main-menu-item:focus-within > .product-categories-list {
+  display: flex;
+}
+
 .main-menu-item:hover > .product-categories-list {
   display: flex;
 }
