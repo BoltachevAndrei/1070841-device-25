@@ -1781,6 +1781,7 @@ main h1 {
   letter-spacing: 3.2px;
   line-height: 24px;
   text-transform: uppercase;
+  padding-bottom: 7px;
 }
 
 .filters-container {
