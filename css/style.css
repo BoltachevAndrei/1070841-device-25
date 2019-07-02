@@ -1387,6 +1387,7 @@ main h1 {
 
 .popular-list {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -1629,6 +1630,7 @@ main h1 {
 
 .brands-logo-list {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
