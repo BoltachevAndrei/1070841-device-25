@@ -1616,7 +1616,6 @@ main h1 {
   width: 118px;
 }
 
-
 /******************************Brands Logos**********************************/
 
 .brands {
@@ -1635,6 +1634,12 @@ main h1 {
   height: 100px;
   margin-right: 40px;
   margin-top: 94px;
+  width: 260px;
+}
+
+.brands-logo-item a {
+  display: inline-block;
+  height: 100px;
   width: 260px;
 }
 
