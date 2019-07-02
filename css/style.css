@@ -849,9 +849,9 @@ main h1 {
   opacity: 0.3;
 }
 
-.container-footer-top .login-link.logout a,
-.container-footer-top .login-link.logout a:hover,
-.container-footer-top .login-link.logout a:active {
+.login-link.logout-footer a,
+.login-link.logout-footer a:hover,
+.login-link.logout-footer a:active {
   color: #ffffff;
 }
 
@@ -2059,9 +2059,18 @@ main h1 {
   text-align: right;
 }
 
-
 #service-1:focus ~ .services-slider-controls .services-controls-item-1,
 #service-2:focus ~ .services-slider-controls .services-controls-item-2,
 #service-3:focus ~ .services-slider-controls .services-controls-item-3 {
   box-shadow: 0px 0px 10px blue;
+}
+
+#product-1:focus ~ .products-slider-list .products-controls-item-1::before,
+#product-2:focus ~ .products-slider-list .products-controls-item-2::before,
+#product-3:focus ~ .products-slider-list .products-controls-item-3::before {
+  outline: 2px solid #a6c7fe;
+}
+
+.filter-input:focus ~ label::before {
+  outline: 2px solid #a6c7fe;
 }
