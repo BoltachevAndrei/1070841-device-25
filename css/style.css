@@ -1,15 +1,15 @@
 @font-face {
     font-family: "gilroylight";
-    src: url("../fonts/gilroy-light-webfont.woff2") format('woff2'),
-         url("../fonts/gilroy-light-webfont.woff") format('woff');
+    src: url("../fonts/gilroy-light-webfont.woff2") format("woff2"),
+         url("../fonts/gilroy-light-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "gilroyextrabold";
-    src: url("../fonts/gilroy-extrabold-webfont.woff2") format('woff2'),
-         url("../fonts/gilroy-extrabold-webfont.woff") format('woff');
+    src: url("../fonts/gilroy-extrabold-webfont.woff2") format("woff2"),
+         url("../fonts/gilroy-extrabold-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
@@ -171,6 +171,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 
+.login-link,
 .user-navigation a,
 .product-navigation a,
 .main-menu-list a,
@@ -179,14 +180,10 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, 1);
 }
 
-.user-navigation a:hover,
-.product-navigation a:hover,
 .main-menu-list a:hover {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.user-navigation a:active,
-.product-navigation a:active,
 .main-menu-list a:active {
   color: rgba(0, 0, 0, 0.3);
 }
@@ -260,7 +257,10 @@ input[type="radio"].visually-hidden {
   color: rgba(255, 255, 255, 1);
 }
 
-.main-footer a:hover .icon {
+.user-link:hover .icon-footer,
+.login-link:hover .icon-footer,
+.compare-link:hover .icon-footer,
+.cart-link:hover .icon-footer {
   fill: rgba(255, 198, 0, 0.6);
 }
 
@@ -268,7 +268,10 @@ input[type="radio"].visually-hidden {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.main-footer a:active .icon {
+.user-link:active .icon-footer,
+.login-link:active .icon-footer,
+.compare-link:active .icon-footer,
+.cart-link:active .icon-footer {
   fill: rgba(255, 198, 0, 0.3);
 }
 
@@ -313,7 +316,7 @@ input[type="radio"].visually-hidden {
 
 /* Каталог - Мейн */
 
-main h1 {
+.wrapper h1 {
   color: #000000;
   font-family: "gilroyextrabold", Arial, sans-serif;
   font-size: 47px;
@@ -427,6 +430,7 @@ main h1 {
 .product-navigation {
   display: flex;
   justify-content: space-between;
+  margin-left: auto;
   width: 213px;
 }
 
@@ -550,11 +554,28 @@ main h1 {
 
 .footer-social {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   list-style: none;
-  margin: 2px auto 0 430px;
+  margin: 0;
   padding: 0;
-  width: 140px;
+  width: 170px;
+}
+
+.footer-social li {
+  padding: 2px 11px 0 11px;
+}
+
+.container-footer-bottom::before {
+  background-color: #ffc600;
+  content: "";
+  height: 7px;
+  margin-right: 419px;
+  margin-top: 15px;
+  width: 80px;
+}
+
+.htmlacademy-logo {
+  margin-left: auto;
 }
 
 .wrapper {
@@ -628,7 +649,21 @@ main h1 {
 
 /******************************************************/
 
+.login-link {
+  padding-right: 5px;
+}
+
+.container-footer .login-link {
+  margin-right: -4px;
+  margin-top: -3px;
+}
+
+.container-footer .login-link.logout {
+  margin-top: 0;
+}
+
 .login-link svg {
+  margin-top: 9px;
   padding-right: 10px;
 }
 
@@ -1137,13 +1172,6 @@ main h1 {
   width: 27px;
 }
 
-.footer-line {
-  background-color: #ffc600;
-  height: 7px;
-  margin-top: 15px;
-  width: 80px;
-}
-
 .catalog-item {
   align-content: flex-start;
   display: flex;
@@ -1179,7 +1207,6 @@ main h1 {
   right: 26px;
   top: 30px;
 }
-
 
 /***************************Products slider***************************************/
 
@@ -1322,6 +1349,7 @@ main h1 {
   height: 12px;
   margin-right: 21px;
   position: relative;
+  vertical-align: top;
   width: 12px;
 }
 
@@ -1394,7 +1422,7 @@ main h1 {
   width: 160px;
 }
 
-.popular-item:last-child {
+.popular-item:nth-child(6n) {
   margin-right: 0;
 }
 
@@ -1406,7 +1434,7 @@ main h1 {
 }
 
 .popular-icon {
-  display: inline-block;
+  display: block;
 }
 
 .popular-item svg {
@@ -1638,7 +1666,7 @@ main h1 {
 }
 
 .brands-logo-item a {
-  display: inline-block;
+  display: block;
   height: 100px;
   width: 260px;
 }
@@ -1786,14 +1814,14 @@ main h1 {
 .sorting-type {
   align-items: flex-start;
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
-  margin: 13px 0 0;
+  margin: 18px 0 0;
   padding: 0;
 }
 
-.sorting-type li {
+.sorting-type a {
   color: rgba(0, 0, 0, 0.3);
-  cursor: pointer;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -1803,69 +1831,71 @@ main h1 {
   margin-top: 12px;
 }
 
-.sorting-type li:hover {
+.sorting-type a:hover {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.sorting-type li:active {
+.sorting-type a:active {
   color: #000000;
 }
 
-.sorting-type li.current-sorting-type {
+.current-sorting-type a {
   color: #000000;
 }
 
 .sorting-order {
-  align-items: center;
+  align-items: flex-start;
   display: flex;
+  list-style: none;
   margin: 0 0 0 auto;
   padding: 0;
 }
 
-.sorting-order li {
-  cursor: pointer;
+.sorting-order-value a {
   font-size: 0;
+}
+
+.sorting-order-value a::before {
+  color: #000000;
   opacity: 0.2;
 }
 
-.sorting-order li:not(.current-sorting-order):hover {
+.sorting-order-value a:hover::before {
   opacity: 0.4;
 }
 
-.sorting-order li:not(.current-sorting-order):active {
+.sorting-order-value a:active::before {
   opacity: 1;
 }
 
-.sorting-order .current-sorting-order {
+.current-sorting-order a::before {
   opacity: 1;
 }
 
-.sorting-order li:first-child::before {
+.sorting-order-value:first-of-type a::before {
   border-bottom: 10px solid #000000;
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
-  content: "";
+  content: attr(aria-label);
+  display: inline-block;
   height: 0;
+  margin-right: 15px;
+  margin-top: 30px;
+  vertical-align: top;
   width: 0;
 }
 
-.sorting-order li:last-child::before {
+.sorting-order-value:last-of-type a::before {
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
   border-top: 10px solid #000000;
-  content: "";
+  content: attr(aria-label);
+  display: inline-block;
   height: 0;
+  margin-right: -3px;
+  margin-top: 30px;
+  vertical-align: top;
   width: 0;
-}
-
-.sorting-order li:first-child {
-  margin-right: 15px;
-  margin-top: -3px;
-}
-
-.sorting-order li:last-child {
-  margin-right: -2px;
-  margin-top: 15px;
 }
 
 /*****************************Pagination********************************/
@@ -1977,6 +2007,11 @@ main h1 {
   width: 4px;
 }
 
+.range-controls .toggle:active {
+  border: 9px solid #ffffff;
+  top: 3px;
+}
+
 .range-controls .toggle-min {
   left: -4px;
 }
@@ -1997,6 +2032,7 @@ main h1 {
   font-weight: 400;
   letter-spacing: 0.14px;
   line-height: 24px;
+  vertical-align: top;
 }
 
 .price-controls input {
@@ -2030,3 +2066,4 @@ main h1 {
 .filter-input:focus ~ label::before {
   outline: 2px solid #a6c7fe;
 }
+
